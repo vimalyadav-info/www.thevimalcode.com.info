@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="gamestyle.css">
+  
+</head>
+<body>
+    <div class="game-container">
+        <img src="game logo.png" alt="Game Logo" class="logo">
+        <h1>🎯 Guess the Number 🎯</h1>
+        <p>Guess a number between 1 and 10:</p>
+        <input type="number" id="guessInput" min="1" max="10" placeholder="Enter your guess">
+        <button onclick="checkGuess()">Submit Guess</button>
+        <p class="message" id="message"></p>
+        <div class="celebration" id="celebration">🎉 🎊 🎉</div>
+
+        <!-- Refresh Button -->
+        <button onclick="location.reload();" style="margin-top: 20px; padding: 10px 20px; font-size: 16px; background: #ff5733; color: #fff; border: none; border-radius: 5px; cursor: pointer;">
+            🔄 Refresh Game
+        </button>
+    </div>
+
+    <audio id="successSound" src="winner.mp3"></audio>
+    <audio id="errorSound" src="failure.mp3"></audio>
+
+    <script>
+        const number = Math.floor(Math.random() * 10) + 1;  // Random number between 1 and 10
+        let attempts = 0;
+        const maxAttempts = 5; // Maximum number of attempts
+
+        function checkGuess() {
+            const guess = parseInt(document.getElementById('guessInput').value);
+            const messageElement = document.getElementById('message');
+            const celebrationElement = document.getElementById('celebration');
+            const successSound = document.getElementById('successSound');
+            const errorSound = document.getElementById('errorSound');
+            const arrowElement = document.createElement('span'); // Create an element for the arrow
+
+            // Check if guess is valid
+            if (isNaN(guess) || guess < 1 || guess > 10) {
+                messageElement.textContent = '⚠️ Please enter a valid number between 1 and 10.';
+                messageElement.style.color = '#ffcc00';
+                return;
+            }
+
+            attempts++;
+
+            if (guess > number) {
+                messageElement.textContent = '📉 Too high! Try a lower number.';
+                arrowElement.textContent = '⬇️'; // Down arrow for too high
+                arrowElement.classList.add('arrow', 'arrow-down');
+                messageElement.appendChild(arrowElement);
+                errorSound.play();
+            } else if (guess < number) {
+                messageElement.textContent = '📈 Too low! Try a higher number.';
+                arrowElement.textContent = '⬆️'; // Up arrow for too low
+                arrowElement.classList.add('arrow', 'arrow-up');
+                messageElement.appendChild(arrowElement);
+                errorSound.play();
+            } else {
+                messageElement.textContent = `🎉 Congratulations! You guessed it in ${attempts} attempts.`;
+                messageElement.style.color = '#4caf50';
+                celebrationElement.style.display = 'block';
+                successSound.play();
+                return;
+            }
+
+            // Check if the player has exceeded the maximum number of attempts
+            if (attempts >= maxAttempts) {
+                messageElement.textContent = `❌ Game Over! You've used all ${maxAttempts} attempts. The number was ${number}.`;
+                messageElement.style.color = '#ff0000';
+                errorSound.play();
+            }
+        }
+    </script>
+</body>
+</html>

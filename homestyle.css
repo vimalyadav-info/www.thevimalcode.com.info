@@ -1,0 +1,141 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #101010;
+    color: #ffffff;
+}
+
+.main-header {
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4da8da;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+button{
+    border: rgb(200, 176, 43);
+    color:white;
+    background: blueviolet;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.learn-more {
+    background-color: #4da8da;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.profile-picture img {
+    width: 500px;
+    border-radius: 50%;
+    border: 2px solid blue;
+    object-fit: cover;
+}
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #101010;
+    color: white;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #181818;
+}
+.logo img {
+    height: 50px;
+    width: auto;
+    border-radius: 50%; /* Makes the image circular */
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+.nav-links a:hover {
+    color: #4da8da;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .social-icons a {
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    display: inline-flex;
+    align-items: center;
+}
+
+footer .social-icons a img {
+    width: 24px;  /* Size of the icons */
+    height: 24px;
+    margin-right: 8px; /* Space between icon and text */
+}
+
+footer .social-icons a:hover {
+    color: #f1c40f;
+}
+
+footer p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}

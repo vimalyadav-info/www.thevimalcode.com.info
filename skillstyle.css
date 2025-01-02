@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #EDEDED;
+    background-color: #121212; /* Dark black theme */
+    line-height: 1.6;
+    padding: 0 10%;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #1F1F1F; /* Slightly lighter black for contrast */
+    border-bottom: 2px solid #BB86FC; /* Purple accent */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #BB86FC;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    color: #03DAC6; /* Teal accent */
+    margin-top: 10px;
+}
+
+.skills-category {
+    background: #1F1F1F;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.skills-category h3 {
+    font-size: 1.8rem;
+    color: #BB86FC;
+    margin-bottom: 10px;
+}
+
+.skills-category ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skills-category li {
+    font-size: 1.1rem;
+    color: #E0E0E0;
+    margin: 10px 0;
+}
+
+.skills-category li i {
+    color: #03DAC6; /* Icon color */
+    margin-right: 10px;
+}
+
+.experience h3 {
+    font-size: 1.8rem;
+    color: #BB86FC;
+    margin-bottom: 10px;
+}
+
+.experience p {
+    font-size: 1.1rem;
+    color: #E0E0E0;
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    background: #1F1F1F;
+    padding: 20px;
+    margin-top: 30px;
+    color: #EDEDED;
+    border-top: 2px solid #BB86FC;
+}
+
+footer h2 {
+    font-size: 1.5rem;
+    color: #BB86FC;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 1rem;
+    color: #03DAC6;
+}
+
+ 

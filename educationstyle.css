@@ -1,0 +1,76 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #EDEDED;
+    background-color: #121212; /* Deep black theme */
+    line-height: 1.6;
+    padding: 0 10%;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #1F1F1F;
+    border-bottom: 2px solid #BB86FC; /* Purple accent */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #BB86FC;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    color: #03DAC6; /* Teal accent */
+    margin-top: 10px;
+}
+
+.education {
+    margin-top: 20px;
+}
+
+.education-item {
+    background: #1F1F1F;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.education-item h3 {
+    font-size: 1.8rem;
+    color: #BB86FC;
+    margin-bottom: 10px;
+}
+
+.education-item p {
+    font-size: 1rem;
+    color: #E0E0E0;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    background: #1F1F1F;
+    padding: 20px;
+    margin-top: 30px;
+    color: #EDEDED;
+    border-top: 2px solid #BB86FC;
+}
+
+footer h2 {
+    font-size: 1.5rem;
+    color: #BB86FC;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 1rem;
+    color: #03DAC6;
+}

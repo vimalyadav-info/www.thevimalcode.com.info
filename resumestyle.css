@@ -1,0 +1,125 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+/* Header Section */
+header {
+    background-color: #232f3e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #ff9900;
+}
+
+header section {
+    font-size: 1rem;
+}
+
+header a {
+    color: #ff9900;
+    text-decoration: none;
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+/* Section Titles */
+h2 {
+    color: #232f3e;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ff9900;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* About Me Section */
+section p {
+    margin: 10px 0;
+}
+
+/* Education Section */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+ul li b {
+    color: #ff9900;
+}
+
+/* Skills Section */
+.skills-list li {
+    margin: 5px 0;
+}
+
+/* Projects Section */
+.projects ul {
+    padding-left: 15px;
+}
+
+.projects ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.projects ul p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.projects strong {
+    color: #232f3e;
+}
+
+/* Hobbies Section */
+.hobbies ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.hobbies ul li {
+    background-color: #ff9900;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+/* Horizontal Rule Styling */
+hr {
+    border: 0;
+    height: 1px;
+    background: #ff9900;
+    margin: 20px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: white;
+    background-color: #232f3e;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
