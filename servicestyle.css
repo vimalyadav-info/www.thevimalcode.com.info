@@ -21,7 +21,7 @@ body {
 
 /* Header */
 .header {
-    background-color: #007bff;
+    background-color: black;
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -79,7 +79,7 @@ body {
 
 /* Call to Action Section */
 .cta {
-    background-color: #007bff;
+    background: rgb(30, 29, 29);
     color: white;
     padding: 30px 0;
     text-align: center;
@@ -97,7 +97,7 @@ body {
 
 .cta-button {
     text-decoration: none;
-    background-color: #0056b3;
+    background-color: #f28704;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -105,13 +105,14 @@ body {
     transition: background-color 0.3s;
 }
 
-.cta-button:hover {
-    background-color: #003d80;
+.cta-button:hover:hover {
+    background-color: black;
+    box-shadow: 0 0 10px #e98203, 0 0 20px #1d04d4, 0 0 30px #00ffcc;
 }
 
 /* Footer */
 .footer {
-    background-color: #333;
+    background-color: black;
     color: white;
     text-align: center;
     padding: 10px 0;
